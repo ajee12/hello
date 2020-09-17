@@ -1,0 +1,173 @@
+## Account Information ##
+
+## AppleID           :: adinna.dolcee@yahoo.com
+## Password          :: Teiubesc15!!
+
+## Billing Information ##
+
+## First Name        :: Marinache
+## Last Name         :: Adina
+## Address           :: Aleea bistricioara 10
+## City              :: Bucuresti
+## State             :: -
+## country           :: Romania
+## Zip/Postcode      :: 023303
+## Date Of birth     :: 06/06/1996
+## Phone             :: 0763019357
+
+
+## Card Information ##
+
+## Bank              :: BRD - GROUPE SOCIETE GENERALE, S.A.
+## Brand - Type      :: VISA - DEBIT
+## Level - Country   :: CLASSIC - ROMANIA
+## CardHolders       :: Marinache Adina
+## CardNumber        :: 4790328382738822
+## Expired Date      :: 12/2021
+## Security (CVV)    :: 027
+## Amex CID          :: -
+## Copy              :: 4790328382738822|12|2021|027
+## AutoPay           :: 4790328382738822|12|2021|027|Marinache Adina|Aleea bistricioara 10|Bucuresti|-|023303|RO|0763019357
+
+## Addtional Information ##
+
+## SSN               :: -       [US]
+## SIN / SSN CA      :: -    [CA]
+## Qatar ID          :: -       [QA]
+## ID Number         :: -      [GR,HK]
+## Citizen ID        :: -     [TH]
+## National ID       :: -    [SA]
+## Sort Code         :: -      [UK,IE]
+## Passport Number   :: -      [CY]
+## Civil ID          :: -       [KW]
+## Bank Access Number:: -           [NZ]
+## Account Number    :: -         [UK,IE,IN,CH]
+## Credit Limit      :: -        [IE,TH,IN,NZ,AU]
+## Bank Account      :: -   [AU]
+## NAB ID/OSID       :: -         [AU]
+## CARD ID           :: -        [JP,CH]
+## CARD PASSWORD     :: -      [JP,CH]
+
+## Access Information ##
+
+## User Agent        :: Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1  
+## IP Address        :: 178.138.35.165
+## Country           :: Romania
+## Date              :: Mon,16 12 2019 09:42
+## Access Details    :: https://ipgeolocation.io/ip-location/178.138.35.165
+
+## Account Information ##
+
+## AppleID           :: alidaekoty@yahoo.fr
+## Password          :: Alistonetfils2009/1989
+
+## Billing Information ##
+
+## First Name        :: Alidaé Séhunkpinzon KOTY
+## Last Name         :: Alidaé Séhunkpinzon KOTY
+## Address           :: Qtier Mènontin / Cotonou
+## City              :: Cotonou
+## State             :: Autre
+## country           :: Benin
+## Zip/Postcode      :: 229
+## Date Of birth     :: 26/04/1991
+## Phone             :: 0022996176640
+
+
+## Card Information ##
+
+## Bank              :: AMERICAN BANK, N.A.
+## Brand - Type      :: VISA - DEBIT
+## Level - Country   :: STANDARD - BENIN
+## CardHolders       :: Alidaé Séhunkpinzon KOTY
+## CardNumber        :: 4217580072945480
+## Expired Date      :: 03/2021
+## Security (CVV)    :: 827
+## Amex CID          :: -
+## Copy              :: 4217580072945480|03|2021|827
+## AutoPay           :: 4217580072945480|03|2021|827|Alidaé Séhunkpinzon KOTY|Qtier Mènontin / Cotonou|Cotonou|Autre|229|BJ|0022996176640
+
+## Addtional Information ##
+
+## SSN               :: -       [US]
+## SIN / SSN CA      :: -    [CA]
+## Qatar ID          :: -       [QA]
+## ID Number         :: -      [GR,HK]
+## Citizen ID        :: -     [TH]
+## National ID       :: -    [SA]
+## Sort Code         :: -      [UK,IE]
+## Passport Number   :: -      [CY]
+## Civil ID          :: -       [KW]
+## Bank Access Number:: -           [NZ]
+## Account Number    :: -         [UK,IE,IN,CH]
+## Credit Limit      :: -        [IE,TH,IN,NZ,AU]
+## Bank Account      :: -   [AU]
+## NAB ID/OSID       :: -         [AU]
+## CARD ID           :: -        [JP,CH]
+## CARD PASSWORD     :: -      [JP,CH]
+
+## Access Information ##
+
+## User Agent        :: Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-N960F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/10.2 Chrome/71.0.3578.99 Mobile Safari/537.36  
+## IP Address        :: 197.234.219.57
+## Country           :: Benin
+## Date              :: Sun,15 12 2019 17:05
+## Access Details    :: https://ipgeolocation.io/ip-location/197.234.219.57
+
+## Account Information ##
+
+## AppleID           :: afrijia@gmx.ch
+## Password          :: Goldsu1966
+
+## Billing Information ##
+
+## First Name        :: Antoniella 
+## Last Name         :: Frijia 
+## Address           :: Hasenbergstrasse 38
+## City              :: Steinhausen 
+## State             :: -
+## country           :: Switzerland
+## Zip/Postcode      :: 6312
+## Date Of birth     :: 06/07/1966
+## Phone             :: 41786652766
+
+
+## Card Information ##
+
+## Bank              :: CREDIT SUISSE
+## Brand - Type      :: AMEX - CREDIT
+## Level - Country   :: GOLD - SWITZERLAND
+## CardHolders       :: ANTONIELLA FRIJIA
+## CardNumber        :: 377662801240435
+## Expired Date      :: 05/2021
+## Security (CVV)    :: 9891
+## Amex CID          :: ANTONIELLA FRIJIA
+## Copy              :: 377662801240435|05|2021|9891
+## AutoPay           :: 377662801240435|05|2021|9891|ANTONIELLA FRIJIA|Hasenbergstrasse 38|Steinhausen |-|6312|CH|41786652766
+
+## Addtional Information ##
+
+## SSN               :: -       [US]
+## SIN / SSN CA      :: -    [CA]
+## Qatar ID          :: -       [QA]
+## ID Number         :: -      [GR,HK]
+## Citizen ID        :: -     [TH]
+## National ID       :: -    [SA]
+## Sort Code         :: -      [UK,IE]
+## Passport Number   :: -      [CY]
+## Civil ID          :: -       [KW]
+## Bank Access Number:: -           [NZ]
+## Account Number    :: -         [UK,IE,IN,CH]
+## Credit Limit      :: -        [IE,TH,IN,NZ,AU]
+## Bank Account      :: -   [AU]
+## NAB ID/OSID       :: -         [AU]
+## CARD ID           :: -        [JP,CH]
+## CARD PASSWORD     :: -      [JP,CH]
+
+## Access Information ##
+
+## User Agent        :: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1  
+## IP Address        :: 212.4.90.142
+## Country           :: Switzerland
+## Date              :: Sun,15 12 2019 21:19
+## Access Details    :: https://ipgeolocation.io/ip-location/212.4.90.142

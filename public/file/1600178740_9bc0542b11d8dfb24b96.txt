@@ -1,0 +1,208 @@
+USE swalayan
+1)
+INSERT INTO PEMASOK VALUES 
+(0001,'Hijrah','Jln Ketapang','0823456789'),
+(0002,'Firman','Jln Karya Sakti','0823483755'),
+(0003,'Wahyu','Jln Jakarta','0852127321'),
+(0004,'Luna maya','Jln Srikandi','0823223232'),
+(0005,'Udin','Jln Mawar','0852621363');
+
+INSERT INTO PEGAWAI VALUES 
+(001,'Cindy','Jln Lobak','0823768762','Shift Siang','Cindy','setia123','Cashier'),
+(002,'Firman','Jln Sinar Mas','08232343','Shift Malam','Firman','gaul123','Cashier'),
+(003,'Wulan','Jln Fajar','0823324384','Shift Pagi','Wulan','kiri123','Cashier'),
+(004,'Wahyu','Jln Puyuh Mas','082337247','Shift Wahyu','Fitri','ganteng123','Gudang'),
+(005,'Ayi','Jln Palapa','08231283823','Shift Malam','Ayi','kita123','Gudang');
+
+INSERT INTO Barang VALUES 
+('001','Telur',100,2500,3000,500,20),
+('002','Indomie Rebus',100,2500,3000,500,20),
+('003','Sabun Lifeboy',100,3000,4000,500,20),
+('004','Minyak Bimoli',100,25000,30000,10000,20),
+('005','Beras Anak Daro',100,136000,150000,50000,20);
+
+INSERT INTO Penjulan VALUES 
+(001,'001',001,5,15000,'2019-02-02'),
+(002,'002',002,10,30000,'2019-02-02'),
+(003,'003',003,15,60000,'2019-02-02'),
+(004,'004',004,20,600000,'2019-02-02'),
+(005,'005',005,25,3750000,'2019-02-02');
+
+INSERT INTO pasok VALUES
+(001,001,'001',100,'2019-02-01'),
+(002,002,'002',100,'2019-02-01'),
+(003,003,'003',100,'2019-02-01'),
+(004,004,'004',100,'2019-02-01'),
+(005,005,'005',100,'2019-02-01');
+
+
+
+
+2)
+SELECT * FROM distributor
+UPDATE distributor SET alamat = 'Jln Srikandi' WHERE nm_dist = 'Luna Maya' OR iddist = '0004' OR telepon = '0823223232';
+SELECT * FROM kasir
+UPDATE kasir SET nama = 'Cindy' WHERE idkasir = '001' OR telepon = '0823768762';
+SELECT * FROM pasok
+UPDATE pasok SET iddist = '00001' WHERE idpasok = '001';
+SELECT * FROM penjualan
+UPDATE penjualan SET idpenjualan = '005' WHERE idbarang = '005';
+SELECT * FROM tblbarang
+UPDATE tblbarang SET namabarang = 'Telur' WHERE idbarang = '001';
+
+3)
+SELECT id_barang,Nama_Barang FROM table_barang WHERE harga='2500';
+
+SELECT*FROM id_barang WHERE harga > 100 ORDER BY harga;
+
+SELECT*FROM id_barang ORDER BY nama_barang LIMIT 10;
+
+SELECT * FROM tblbarang
+WHERE namabarang LIKE ;
+
+SELECT * FROM tblbarang
+WHERE idbarang
+BETWEEN 2 AND 4;
+
+SELECT tblbarang 
+GROUP CONCAT (DISTINCT stok_barang
+ORDER BY harga
+SEPARATOR ',';
+
+SELECT * FROM tblbarang WHERE stok = '100' OR diskon = '20';
+
+SELECT * FROM tblbarang
+SELECT namabarang,SUM(harga) FROM ORDER GROUP BY namabarang;
+
+
+4)
+SELECT * FROM distributor
+DELETE FROM distributor	 WHERE nm_dist = 'Wahyu';
+
+
+SELECT * FROM kasir
+DELETE  FROM kasir WHERE nama = 'Wulan';
+
+SELECT * FROM pasok
+DELETE FROM pasok WHERE idbarang = '003';
+
+
+SELECT * FROM penjualan
+DELETE FROM penjualan WHERE idbarang = '003';
+
+SELECT * FROM tblbarang
+DELETE  FROM tblbarang WHERE namabarang = 'Sabun Lifeboy';
+
+5)
+SELECT iddist AS hijrah_iddist, nm_dist AS hijrah_nmdist, alamat AS hijrah_alamat,telepon AS hijrah_telepon FROM distributor
+
+
+SELECT idkasir AS hijrah_idkasir, nama AS hijrah_nama, alamat AS hijrah_alamat,telepon AS hijrah_telepon,STATUS AS hijrah_status,username AS hijrah_username,PASSWORD AS hijrah_password,akses AS hijrah_akses FROM kasir
+
+SELECT idpasok AS hijrah_idpasok, iddist AS hijrah_iddist, jumlah AS hijrah_jumlah, tanggal AS hijrah
+SELECT idpenjualan AShijrah_idpenjualan, idbarang AShijrah_idbarang, idkasir AS hijrah_idkasir,total AS hijrah_total, tanggal AS hijrah_tanggal FROM penjualan
+
+SELECT idbarang AS hijrah_idbarang, namabarang AShijrah_namabarang,stok AS hijrah_stok, hargapokok AS hijrah_hargapokok,hargajual AS hijrah_hargajual, ppn AS hijrah_ppn, diskon AS hijrah_diskon FROM tblbarang
+
+6)
+SELECT br.id_barang, nama_barang,stok_barang, harga
+FROM 
+LEFT JOIN penjualan USING(id_pembeli)
+
+SELECT br.id_barang, nama_barang, harga
+FROM tblbarang 
+JOIN penjualan  USING(id_pembeli)
+
+SELECT pl.id_pelanggan, nama, tgl_transaksi, total_transaksi
+FROM pelanggan pl
+RIGHT JOIN penjualan USING(id_pelanggan)
+
+
+7)
+
+CREATE TABLE `pemasok` (
+  `iddist` int(11) NOT NULL,
+  `nm_dist` varchar(100) DEFAULT NULL,
+  `alamat` varchar(150) DEFAULT NULL,
+  `telepon` varchar(14) DEFAULT NULL,
+  PRIMARY KEY (`iddist`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `distributor` */
+
+/*Table structure for table `kasir` */
+
+DROP TABLE IF EXISTS `kasir`;
+
+CREATE TABLE `pegawai` (
+  `idkasir` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `alamat` varchar(150) DEFAULT NULL,
+  `telepon` varchar(14) DEFAULT NULL,
+  `status` varchar(12) DEFAULT NULL,
+  `username` varchar(30) DEFAULT NULL,
+  `password` varchar(30) DEFAULT NULL,
+  `akses` varchar(6) DEFAULT NULL,
+  PRIMARY KEY (`idkasir`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `kasir` */
+
+/*Table structure for table `pasok` */
+
+DROP TABLE IF EXISTS `pasok`;
+
+CREATE TABLE `pasok` (
+  `idpasok` int(11) NOT NULL,
+  `iddist` int(11) DEFAULT NULL,
+  `idbarang` varchar(20) DEFAULT NULL,
+  `jumlah` int(11) DEFAULT NULL,
+  `tanggal` date DEFAULT NULL,
+  PRIMARY KEY (`idpasok`),
+  KEY `pasok_ibfk_1` (`idbarang`),
+  KEY `iddist` (`iddist`),
+  CONSTRAINT `pasok_ibfk_1` FOREIGN KEY (`idbarang`) REFERENCES `tblbarang` (`idbarang`),
+  CONSTRAINT `pasok_ibfk_2` FOREIGN KEY (`iddist`) REFERENCES `distributor` (`iddist`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `pasok` */
+
+/*Table structure for table `penjualan` */
+
+DROP TABLE IF EXISTS `penjualan`;
+
+CREATE TABLE `penjualan` (
+  `idpenjualan` int(11) NOT NULL,
+  `idbarang` varchar(20) DEFAULT NULL,
+  `idkasir` int(11) DEFAULT NULL,
+  `jumlah` int(11) DEFAULT NULL,
+  `total` double(10,2) DEFAULT NULL,
+  `tanggal` date DEFAULT NULL,
+  PRIMARY KEY (`idpenjualan`),
+  KEY `idbarang` (`idbarang`),
+  KEY `idkasir` (`idkasir`),
+  CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`idbarang`) REFERENCES `tblbarang` (`idbarang`),
+  CONSTRAINT `penjualan_ibfk_2` FOREIGN KEY (`idkasir`) REFERENCES `kasir` (`idkasir`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `penjualan` */
+
+/*Table structure for table `tblbarang` */
+
+DROP TABLE IF EXISTS `tblbarang`;
+
+CREATE TABLE `tblbarang` (
+  `idbarang` varchar(20) NOT NULL,
+  `namabarang` varchar(50) DEFAULT NULL,
+  `stok` int(11) DEFAULT NULL,
+  `hargapokok` double(10,2) DEFAULT NULL,
+  `hargajual` double(10,2) DEFAULT NULL,
+  `ppn` int(11) DEFAULT NULL,
+  `diskon` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idbarang`)
+
+
+
+
+
+

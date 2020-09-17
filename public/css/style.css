@@ -1,0 +1,12 @@
+.nama {
+    width: 100px;
+}
+
+.table>tbody>tr>* {
+    vertical-align: middle;
+}
+
+.th,
+col {
+    width: 100px;
+}
